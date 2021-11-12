@@ -42,7 +42,7 @@ class knowledger():
         except:
             js = None
 
-        if not js or 'status' not in js or js['status'] != 'OK':
+        if not js:
             print('==== Failure To Retrieve ====')
             print(data)
             return {}
