@@ -30,7 +30,7 @@ class knowledger():
             'indent': True,
             'key': self.api_key,
         }
-        url = serviceurl + '?' + urllib.parse.urlencode(parms)
+        url = serviceurl + '?' + urllib.parse.urlencode(params)
 
         if verbose: print('Retrieving', url)
         uh = urllib.request.urlopen(url, context=ctx)
